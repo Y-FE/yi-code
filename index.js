@@ -11,7 +11,7 @@ dirs.forEach(tableFile => {
         if (err) {
             console.log(err);
         } else {
-            let heads = data.split('\n');
+            let heads = data.split('\r\n');
             let argv = {
                 name: tableFile,
                 fields: [],

@@ -6,8 +6,7 @@
     height=600
     stripe
     border
-    :default-sort = "{prop: 'date', order: 'descending'}"
-    >
+    :default-sort = "{prop: 'date', order: 'descending'}">
     <el-table-column
       prop="scheduleTime"
       label="排班时间"

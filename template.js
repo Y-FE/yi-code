@@ -7,8 +7,7 @@ module.exports = (argv) => {
     height=600
     stripe
     border
-    :default-sort = "{prop: 'date', order: 'descending'}"
-    >
+    :default-sort = "{prop: 'date', order: 'descending'}">
     ${argv.fields.map(field => {
         return [
             '<el-table-column',
