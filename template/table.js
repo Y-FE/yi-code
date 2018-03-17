@@ -1,6 +1,5 @@
-module.exports = (argv) => {
+module.exports = (fields) => {
     return `
-<template>
   <el-table
     :data="tableData"
     style="width: 100%"
@@ -8,7 +7,7 @@ module.exports = (argv) => {
     stripe
     border
     :default-sort = "{prop: 'date', order: 'descending'}">
-    ${argv.fields.map(field => {
+    ${fields.map(field => {
         return [
             '<el-table-column',
             '  prop="' + field.prop + '"',
@@ -19,19 +18,5 @@ module.exports = (argv) => {
         ].join('\n    ');
     }).join('    ')}
   </el-table>
-</template>
-
-<script>
-  export default {
-    name: '${argv.name}',
-    props: ['tableData'],
-    data() {
-      return {
-      }
-    },
-    methods: {
-    }
-  }
-</script>
 `;
 }
