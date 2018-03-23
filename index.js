@@ -31,6 +31,6 @@ program.parse(process.argv);
 
 if(program.show) {
     const data = fs.readFileSync(path.join(__dirname, '/template/show'), 'utf-8');
-    console.log( __dirname, __filename);
-    console.log(dirs);
+    // console.log( __dirname, __filename);
+    console.log(data);
 }
