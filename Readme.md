@@ -1,5 +1,8 @@
 # 前端代码生成
 
+
+[![npm](https://img.shields.io/npm/v/yi-code.svg)](https://www.npmjs.com/package/yi-code) [![Build Status](https://travis-ci.org/Y-FE/yi-code.svg?branch=master)](https://travis-ci.org/Y-FE/yi-code)
+
 ## 安装
 ```
 npm i yi-code -g
