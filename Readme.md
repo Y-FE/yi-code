@@ -10,7 +10,7 @@ npm i yi-code -g
 
 ## 生成组件
 ```
-yhtml setup 组件名称 -i 读取的文件名称  -o 输出的文件名称（默认为读取文件名）
+yhtml gen -h
 ```
 
 ## 查看组件对应名称
