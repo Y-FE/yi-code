@@ -10,7 +10,11 @@ npm i yi-code -g
 
 ## 生成组件
 ```
+# 从普通文本文件生成
 yhtml gen -h
+
+# 从 YAML 格式文件生成包含几个组件的组件
+yhtml yml -h
 ```
 
 ## 查看组件对应名称

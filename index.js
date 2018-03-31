@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const fs = require('fs');
-const test = require('./lib/index');
+const { gen, yml } = require('./lib/index');
 const path = require('path');
 const pkg = require('./package.json');
 
@@ -25,7 +25,15 @@ program
             console.log('请指定输入文件');
             return;
         }
-        test(cmd, options.input, options.outputName);
+        gen(cmd, options.input, options.outputName);
+    });
+
+program
+    .command('yml <inputFile>')
+    .description('从 YAML 格式的文件生成组件')
+    .option('-o, --output [fileName]', '输出文件名')
+    .action(function(cmd, options) {
+        yml(cmd, options.outputName);
     });
 
 program.parse(process.argv);

@@ -1,0 +1,13 @@
+tabsA:
+    template: el-tabs
+    list:
+        - 销售目标管理
+        - 学管目标管理
+tableA:
+    template: el-table
+    list:
+        - 时间
+        - 销售额
+        - 实际销售额
+        - 完成比例
+        - 操作
